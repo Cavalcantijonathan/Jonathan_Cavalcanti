@@ -1,3 +1,10 @@
+/* reset do CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-image: url("https://images.pexels.com/photos/220357/pexels-photo-220357.jpeg?cs=srgb&dl=chaves-computador-portatil-eletronicos-iluminado-220357.jpg&fm=jpg");
     background-size: auto 200vh;
