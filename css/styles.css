@@ -6,40 +6,117 @@
 }
 
 body {
-    background-image: url("https://images.pexels.com/photos/220357/pexels-photo-220357.jpeg?cs=srgb&dl=chaves-computador-portatil-eletronicos-iluminado-220357.jpg&fm=jpg");
+    background-image: url("../img/fundoblack2.jpg") ;
     background-size: auto 200vh;
     color: whitesmoke;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Anton', sans-serif;
     height: 100vh;
+    font-size: 10px;
   }
+
+/*Se a tela estiver pelo menos 400px vai carregar estes estilos */
+@media (min-width:400px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* Break-Point */
+@media (min-width:600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   
-  .menu{
+.menu{
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
   
-  .menu ul {
+.menu ul {
     display: flex;
     justify-content: space-around;
   }
   
-  .menu li {
+.menu li {
     list-style: none;
   }
   
-  a {
+a {
     color: #0B3B24;
     text-decoration: none;
   }
   
-  a:hover {
+a:hover {
     text-decoration: underline;
   }
    
-  .site-subtitle,
-  .site-title {
+
+.site-title {
+    color: whitesmoke;
+    font-size: 3em;
     text-align: center;
+    text-shadow: 1px 1px 2px;
   }
   
-  .site-subtitle {
-    font-style: italic;
+.site-subtitle {
+    color: rgb(100, 97, 97);
+    text-align: center;
+    text-shadow: 1px 1px 2px black
   }
+
+.img-portfolio {
+    height: 180px;
+    height: 180px;
+  }
+
+/*Alteração para animação de site-subtitle */ 
+.site-subtitle {
+    font-style: bold;
+    font: 34px Lobster, cursive;
+    white-space: nowrap; /* para a animação ficar apenas em 1 linha */
+      margin: 0 auto;
+      font-weight: 300;
+      animation: typing 4s steps(25) 1s normal;
+      overflow: hidden;
+    }
+
+/* animação do efeito de digitação */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18em;
+  }
+}
+
+.site-subtitle:after {
+  content: '|';
+  margin-left: 4px;
+  animation: blink 0.7s infinite;
+}
+
+/* animação do cursor piscando */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
