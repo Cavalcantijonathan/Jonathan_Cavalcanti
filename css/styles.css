@@ -9,7 +9,7 @@ body {
     background-image: url("../img/fundoblack2.jpg") ;
     background-size: auto 200vh;
     color: whitesmoke;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Abril Fatface', cursive;
     height: 100vh;
     font-size: 10px;
   }
@@ -70,13 +70,27 @@ a:hover {
     font-size: 3em;
     text-align: center;
     text-shadow: 1px 1px 2px;
+    font-family: 'Major Mono Display', monospace;
   }
   
 .site-subtitle {
     color: rgb(100, 97, 97);
     text-align: center;
-    text-shadow: 1px 1px 2px black
+    text-shadow: 1px 1px 2px black;
+    font-family:'Major Mono Display', monospace;
+    line-height: 1.8em;
   }
+
+.portfolio {   
+  padding: 2em;
+}
+
+.portfolio h2 {
+  font-family: 'Abril Fatface', cursive;
+  color: whitesmoke;
+  margin-bottom: 1.5em;
+
+}
 
 .img-portfolio {
     height: 180px;
