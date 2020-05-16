@@ -83,6 +83,7 @@ a:hover {
 
 .portfolio {   
   padding: 2em;
+  text-align: center
 }
 
 .portfolio h2 {
@@ -92,10 +93,41 @@ a:hover {
 
 }
 
-.img-portfolio {
-    height: 180px;
-    height: 180px;
+.portfolio .grid {
+  display: grid;
+  gap: 2em;    
+}
+
+/*  Se a tela estiver abaixo de 560px vai atender regras de colunas*/
+@media (min-width:560px) {
+  .portfolio .grid {
+    grid-template-columns:240px 240px;
   }
+}
+
+@media (min-width:880px) {
+  .portfolio .grid {
+    grid-template-columns: 260px 260px 260px;
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh- 48px - 8em);    
+  }
+}
+
+.portfolio figure{
+  text-align: center;
+}
+  
+
+.img-portfolio {
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    object-position:center;
+    border-radius: 100%;    
+  }
+
+ 
 
 /*Alteração para animação de site-subtitle */ 
 .site-subtitle {
