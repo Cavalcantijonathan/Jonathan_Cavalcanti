@@ -9,10 +9,12 @@ body {
     background-image: url("../img/fundoblack2.jpg") ;
     background-size: auto 200vh;
     color: whitesmoke;
-    font-family: 'Abril Fatface', cursive;
+    font-family: "Montserrat", sans-serif;
     height: 100vh;
-    font-size: 10px;
+    font-size: 10px;    
   }
+
+
 
 /*Se a tela estiver pelo menos 400px vai carregar estes estilos */
 @media (min-width:400px) {
@@ -104,18 +106,49 @@ a:hover {
     line-height: 1.8em;
   }
 
+.sobre,  
 .contato,
 .portfolio {   
   padding: 2em;
-  text-align: center
+  min-height: 100vh;  
 }
 
+@media (min-width: 1200px) {
+  .container { 
+    margin-left: auto;
+    margin-right: auto;  
+    max-width: 1200px;    
+  }
+}
+
+.sobre,
 .contato h2,
 .portfolio h2 {
   font-family: 'Abril Fatface', cursive;
   color: whitesmoke;
   margin-bottom: 1.5em;
+  font-size: 2em;
+}
 
+.sobre p {
+  color: whitesmoke;
+  text-indent: 1.2em;
+  margin-bottom: 1.2em;
+  text-align: justify;
+  font-size: 25px;
+}
+
+.sobre a {
+  color: rgb(45, 11, 238);
+}
+
+.sobre .profile {
+  float: right;
+  margin-left: 1.5em;
+}
+
+.sobre .profile img {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 
 .portfolio .grid {
@@ -148,8 +181,8 @@ a:hover {
     height: 180px;
     width: 180px;
     object-fit: cover;
-    object-position:center;
-    border-radius: 100%;
+    object-position:left bottom; 
+    border-radius: 100px;   
     transition: transform 500ms;
     
   }
@@ -174,40 +207,3 @@ a:hover {
   text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
 }
 
-/*Alteração para animação de site-subtitle 
-.site-subtitle {
-    font-style: bold;
-    font: 34px Lobster, cursive;
-    white-space: nowrap; /* para a animação ficar apenas em 1 linha 
-      margin: 0 auto;
-      font-weight: 300;
-      animation: typing 4s steps(25) 1s normal;
-      overflow: hidden;
-    } */
-
-/* animação do efeito de digitação 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 18em;
-  }
-}
-
-.site-subtitle:after {
-  content: '|';
-  margin-left: 4px;
-  animation: blink 0.7s infinite;
-} */
-
-/* animação do cursor piscando 
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-} */

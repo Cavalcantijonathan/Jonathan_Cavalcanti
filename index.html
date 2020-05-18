@@ -5,56 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jonathan Cavalcanti</title>
+    <!-- Ancora Css -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Ancora fonte e icones-->
     <link
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Major+Mono+Display&family=Roboto:wght@700&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/16954c9065.js" crossorigin="anonymous"></script>
+
+    <link rel='shortcut icon' type='imagem/png' href='img/code.png'>
+
 </head>
 
 <body>
     <header>
         <nav class="menu">
-            <ul>
-                <li><a href="#">Sobre</a></li>
+            <ul class="container">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#contato">Contatos</a></li>
             </ul>
         </nav>
         <div class="titulo">
-            <h1 class="site-title">Jonathan Cavalcanti</h1>
-            <h2 class="site-subtitle"> Full-Stack Developer </h2>
+            <h1 class="site-title">Jonathan <span class="sobrenome">Cavalcanti</span></h1>
+            <h2 class="site-subtitle"> <span class="profissão"> Desenvolvedor</span> Full Stack <span class="nivel">Jr.</span></h2>
         </div>
 
     </header>
-    <section class="portfolio" id="portfolio">
+    <section class="sobre container" id="sobre">
+        <h2>Sobre</h2>
+
+        <figure class="profile">
+            <img src="img/0.jpeg" alt="Foto Pessoal">
+        </figure>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, saepe inventore. Tenetur voluptatum maxime
+            mollitia aperiam error accusantium quisquam optio? Corporis, in. Hic architecto saepe repellat, sit aliquid
+            praesentium incidunt.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quod voluptatibus veritatis ut quibusdam.
+            Quod vel commodi veniam eveniet earum, totam vero, dolore quia tenetur architecto repellendus doloribus
+            provident deleniti.</p>
+
+        <p>Este site foi construído durante a <a href="https://www.alura.com.br/imersao-css" target="_blank">Imersão CSS
+                da Alura</a></p>
+
+    </section>
+    <section class="portfolio container" id="portfolio">
         <h2>Portfólio</h2>
 
         <div class="grid">
             <figure>
-                <img class="img-portfolio" src="./img/ecommerce-creditos-s-o-c-i-a-l-c-u-t-unsplash.jpg"
-                    alt="eCommerce">
-                <figcaption>E-Commerce</figcaption>
+                <img class="img-portfolio" src= "img/pexels-photo-1029757.jpeg"
+                    alt="Front-End">
+                <figcaption>Front-End</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio" src="./img/mobile-creditos-nate-grant-unsplash.jpg" alt=">Mobile">
+                <img class="img-portfolio" src="img/backend.jpg" alt="backend">
+                <figcaption>Back-End</figcaption>
+            </figure>
+            <figure>
+                <img class="img-portfolio" src= "img/mobile-creditos-nate-grant-unsplash.jpg" alt="Mobile imagem">
                 <figcaption>Mobile</figcaption>
             </figure>
             <figure>
-                <img class="img-portfolio" src="./img/webdesign-creditos-domenico-loia-unsplash.jpg" alt="Web design">
-                <figcaption>Web design</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/projpessoais-creditos-hal-gatewood-unsplash.jpg"
+                <img class="img-portfolio" src="img/desigh.jpeg"
                     alt="Projetos pessoais">
-                <figcaption>Projetos pessoais</figcaption>
+                <figcaption>UX Designer</figcaption>
             </figure>
 
         </div>
 
     </section>
-    <section class="contato" id="contato">
-        <h2>Contato</h2>
+    <section class="contato container" id="contato">
+        <h2>Contatos</h2>
         <div class="grid icons">
             <a target="_blank" href="https://github.com/Cavalcantijonathan">
                 <i class="fab fa-github"></i>
